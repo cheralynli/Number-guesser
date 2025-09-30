@@ -1,0 +1,14 @@
+import random
+
+guess= input("Guess a number between 1 and 100: ")
+compguess= random.randint(1,100)
+
+while guess!=str(compguess):
+    if int(guess)>compguess:
+        print("Your guess is too high. Try again!")
+        guess= input("Guess a number between 1 and 100: ")
+    else:
+        print("Your guess is too low. Try again!")
+        guess= input("Guess a number between 1 and 100: ")
+
+print("Congratulations! You guessed the number!")
